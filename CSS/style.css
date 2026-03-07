@@ -216,7 +216,7 @@
         position: absolute;
         width: 500px;
         height: 500px;
-        background: #101727;
+        background: #2f4882;
         border-radius: 50%;
         filter: blur(100px);
         opacity: 0.6;
@@ -232,7 +232,7 @@
       .blob-2 {
         bottom: -150px;
         left: -100px;
-        background: #1a2a4a;
+        background: #153b87;
       }
       @keyframes moveBlobs {
         0% {
