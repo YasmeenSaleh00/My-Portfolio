@@ -13,6 +13,7 @@
       }
       html {
         scroll-behavior: smooth;
+        scroll-padding-top: 80px; 
       }
       body {
         display: grid;
@@ -69,14 +70,14 @@
       .hero {
         grid-column: span 2;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        
         color: var(--text-color-main);
       }
       .hero .image {
-        margin: 100px auto 20px;
+        margin: 100px ;
       }
 
       .hero .image img {
@@ -94,6 +95,7 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
+        margin-top: 150px;
       }
       .hero .info h1,
       h2 {
@@ -109,6 +111,7 @@
       }
       .hero .info p {
         letter-spacing: 1px;
+        margin-right: 10px;
       }
       .load span {
         animation-name: up-and-down;
@@ -161,9 +164,10 @@
         align-items: center;
         gap: 20px;
         margin-bottom: 40px;
+        margin-top: 20px;
       }
       .action-button .project-button button,
-      .action-button .contact-button button {
+      .action-button .contact-button  {
         background-color: var(--text-color-secondary);
         border: none;
         outline: none;
@@ -171,11 +175,11 @@
         border-radius: 12px;
         border: 1px solid #101727;
       }
-      .action-button .contact-button button {
-        background-color: var(--bg-dark);
+      .action-button .project-button .contact-button  {
+        background-color: var(--bg-dark  );
         border: 1px solid #fff;
       }
-      .action-button .contact-button button:hover a {
+      .action-button .project-button .contact-button:hover a {
         color: var(--text-color-secondary);
       }
       .action-button .project-button button:hover {
@@ -680,7 +684,30 @@
         text-decoration: none;
       }
     
+.box{
+  background-color: var(--bg-dark);
+  border: #153b87;
+    box-shadow:
+          0 0 10px #00d2ffcc,
+          inset 0 0 10px #00d2ff66;
+        
+       
+     
+        margin:20px;
+        padding: 20px;
 
+}
+.skill-content .card h4{
+  margin-bottom: 20px;
+}
+.box .card-icon {
+  display: flex;
+  justify-content: center;
+}
+.box .card-icon img:hover{
+ 
+          transform: scale(1.4);
+}
       /* او لابتوب صغير لتابلت*/
       @media (max-width: 992px) {
         .hero .info h1,
@@ -708,15 +735,28 @@
         .experince-card::before {
           display: none;
         }
+          .hero{
+            flex-direction: column
+           }
+           .hero .info{
+            margin-top: 40px;
+           }
+            .hero .image{
+             margin-bottom: 0;
+        }
       }
       /* موبايل */
       @media (max-width: 600px) {
+         
         .hero .info h1,
         h2 {
           font-size: 20px;
         }
         .hero .info h2 {
           font-size: 18px;
+        }
+        .hero .image{
+             margin-bottom: 0;
         }
         .hero .image img {
           width: 200px !important;
